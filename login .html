@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="login">
+<h2>Enter Username & Password</h2>
+<input type="text" id="user" placeholder="Username"><br>
+<input type="password" id="pass" placeholder="Password"><br>
+<button type="button" onclick="login()">Login</button>
+<p id="msg"></p>
+</div>
+<script>
+function login() {
+    let username = document.getElementById("user").value;
+    let password = document.getElementById("pass").value;
+
+    if (username === "tharunn" && password === "tharun@1304") {
+        window.location.href = "image.html";
+    } else {
+        document.getElementById("msg").innerHTML = "Wrong Username or Password";
+    }
+}
+</script>
+</body>
+</html>
